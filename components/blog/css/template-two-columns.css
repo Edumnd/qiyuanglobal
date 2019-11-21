@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ######## Blog ######## */
+/* Category Area */
+.summary {position:relative; float:left; border-bottom: 1px solid #e5e5e5; margin-bottom:30px;}
+.summary h2 a {font-weight:normal; color: #61c0e8;}
+.summary h2 a:hover {color:#333;}
+.rNi { float: left; margin: 0 20px 0 0;}
+.artHero {float:right; margin: 0 0 0 30px;}
+.tags { font-size: 12px; padding: 20px 0;}
+.tags a, span.articleDate {color:;}
+.summary p.strapline {margin-bottom: 1.2em;}
+.summary .clear {clear: both;}
+.summary form {padding-left: 0!important;}
+
+.rec {margin: 0 0 15px 0; padding: 0 0 15px 0; border-bottom: 1px solid #F0F0F0; min-height: 90px;}
+.rec p {font-size: 12px;margin-bottom:0;}
+.articleBody {padding-right: 30px;}
+.articleBody h3 { margin-top: 20px; text-transform:capitalize;}
+.articleBody ol li {margin-bottom: 10px;}
+.articleBody ul {margin-top: 18px;}
+.articleBody img {max-width:100%; height:auto;}
+#post h1 {font-size: 34px;}
+#post .fbB {margin-bottom: 30px;}
+#post img.alignnone {margin: 50px 0; clear:both;}
+span.bPapp {color: #348BC7;}
+
+/* Sidebar Navigation */
+.sideNav h2, .sideNav h2 a { font-size: 14px; padding: 0; margin: 0; color: #333333;}
+.sideNav h2 a:hover {color:#61c0e8;}
+.sideNav h4 { font-size: 16px; padding: 0 0 10px 0; background: none; height: auto; line-height:inherit;}
+.sideNav ul {margin: 0; list-style:none;}
+.sideNav ul ul {margin-left: 15px;}
+.sideNav li {list-style: none; margin-right: 0;}
+.newsTopics {margin-left:0; list-style:none;}
+.rN {min-height:85px;}
+.rN .rNi {margin-right:15px;}
+.rN h2 {margin-bottom:15px;}
+
+/* Blog Comment */
+#content form.bComments {padding: 20px; width: 582px;}
+/*form.bComments label {width: 120px; float:left;}*/
+#content form.bComments input {width: 550px; margin-bottom: 15px;}
+#content form.bComments textarea {width: 550px; height: 150px; margin-bottom: 15px;}
+#contentform.bComments input {height: 30px; line-height: 30px;}
+#content form.bComments input.btn {width: auto; padding: 0 10px; margin-left: 0;}
+.bCom {border-top: 1px solid #d5d5d5; margin: 0 30px 0 0; padding: 30px 0 20px 0;}
+.bCom span { clear:both;  display:table; height:40px; margin-bottom:15px; color:#999;}
+.bCom span font {display:table-cell; vertical-align:middle;}
+.bCom span b {color: #61c0e8; margin-right:5px; font-weight:bold;}
+.bCom p, .bCom td, .bCom li {font-size:14px!important; line-height:22px!important;}
+.bComImg {width:40px; height:40px; float:left; position:relative; margin-right:20px;}
+
+/* You May Also Like */
+ul.block_you_may_like { height: 320px; margin: 20px auto; list-style: none;}
+li.post_may_like { outline: 1px solid #0077cc; width: 30%; height: 280px; margin: 10px 0; margin-left: 2.7%; float: left;}
+ul.block_you_may_like li:nth-child(1) { margin-left: 0px;}
+.img_wrepp {width: 100%;}
+.img_wrepp img {max-width: 100%; max-height: 100%;}
+.may_like_thumb {padding: 10px 0;}
+.may_like_thumb p {margin: 5px 0; font-size: 12px;}
+.may_like_thumb a {font-size: 16px;}
+
+
+/* ######## Responsive Styles ######## */
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 1100px) {
+	
+}
+@media screen and (max-width: 860px) {
+	
+}
+@media screen and (max-width: 720px) {
+	.bCom {margin-right:0;}
+	#content .bComImg {margin-right:10px;}
+}
