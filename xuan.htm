@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/Article">
+<head>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>起源玄学</title>
+<link rel="icon" type="image/png" href="/sites/www.qiyuanglobal.com/css/images/favicon.ico" />
+<link rel="alternate" href="http://en.qiyuanglobal.com/" hreflang="en" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" media="(device-height: 568px)" />
+<link rel="canonical" href="http://www.qiyuanglobal.com/live-rate" />
+<script type="text/javascript">
+        var script_url = '/';
+        var images_prefix = '/css/images/';
+        var ajax_prefix = '/';
+        var common_prefix = '';
+        var system_moment_format_date = 'L2';
+        var system_moment_format_time = 'LH';
+        var system_moment_format_datetime = 'L2 LH';
+</script>
+<script type="text/javascript" src="js/yui/yahoo-dom-event/yahoo-dom-event.js" tppabs="http://www.qiyuanglobal.com/js/yui/yahoo-dom-event/yahoo-dom-event.js" ></script>
+<script type="text/javascript" src="js/yui/container/container-min.js" tppabs="http://www.qiyuanglobal.com/js/yui/container/container-min.js" ></script>
+<script type="text/javascript" src="js/yui/event/event-min.js" tppabs="http://www.qiyuanglobal.com/js/yui/event/event-min.js" ></script>
+<script type="text/javascript" src="js/yui/element/element-min.js" tppabs="http://www.qiyuanglobal.com/js/yui/element/element-min.js" ></script>
+<script type="text/javascript" src="js/yui/yuiloader/yuiloader-min.js" tppabs="http://www.qiyuanglobal.com/js/yui/yuiloader/yuiloader-min.js" ></script>
+<script type="text/javascript" src="js/yui/dom/dom-min.js" tppabs="http://www.qiyuanglobal.com/js/yui/dom/dom-min.js" ></script>
+<script type="text/javascript" src="js/yui/animation/animation-min.js" tppabs="http://www.qiyuanglobal.com/js/yui/animation/animation-min.js" ></script>
+<script type="text/javascript" src="js/yui/dragdrop/dragdrop-min.js" tppabs="http://www.qiyuanglobal.com/js/yui/dragdrop/dragdrop-min.js" ></script>
+<script type="text/javascript" src="js/yui/button/button-min.js" tppabs="http://www.qiyuanglobal.com/js/yui/button/button-min.js" ></script>
+<script type="text/javascript" src="js/jquery.min.js" tppabs="http://www.qiyuanglobal.com/js/jquery.min.js"></script>
+<script type="text/javascript" src="js/yh_tooltip.js" tppabs="http://www.qiyuanglobal.com/js/yh_tooltip.js" ></script>
+<script type="text/javascript" src="js/validator_o.js" tppabs="http://www.qiyuanglobal.com/js/validator_o.js" ></script>
+<script type="text/javascript" src="js/AJAX.js" tppabs="http://www.qiyuanglobal.com/js/AJAX.js" ></script>
+<script type="text/javascript" src="js/slimbox_module.js" tppabs="http://www.qiyuanglobal.com/js/slimbox_module.js" ></script>
+<script type="text/javascript" src="js/body_blocker.js" tppabs="http://www.qiyuanglobal.com/js/body_blocker.js" ></script>
+<script type="text/javascript" src="components/sidebox/js/sidebox_drop.js" tppabs="http://www.qiyuanglobal.com/components/sidebox/js/sidebox_drop.js" ></script>
+<script type="text/javascript" src="components/sidebox/js/sidebox.js" tppabs="http://www.qiyuanglobal.com/components/sidebox/js/sidebox.js" ></script>
+<script type="text/javascript" src="js/helper.js" tppabs="http://www.qiyuanglobal.com/js/helper.js"></script>
+<script src="js/sweetAlert/sweetalert.min.js" tppabs="http://www.qiyuanglobal.com/js/sweetAlert/sweetalert.min.js"></script>
+<script type="text/javascript">
+    
+    function confirm_callback(options, callback, refuse_callback){
+
+        if(!(options instanceof Object)){
+            options = {};
+        }
+
+        var default_options = {
+            title: 'Are you sure?',
+            text: '',
+            type: "info",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: 'Yes',
+            cancelButtonText: 'No',
+            closeOnConfirm: true,
+            closeOnCancel: true,
+        };
+
+        for(opt in default_options)
+            if(!(opt in options)){
+                options[opt] = default_options[opt];
+            }
+        setTimeout(function () {
+            swal(
+                    options,
+                    function (isConfirm) {
+                        if (isConfirm) {
+                            if (callback)
+                                callback();
+                        }
+                        else if (refuse_callback){
+                            refuse_callback();
+                        }
+                    }
+            );
+        }, 1);
+
+    }
+
+    function confirm_click(confirm_cancel_callback, options_or_title) {
+        window.event.preventDefault();
+        var swal_options = {
+            title : 'Are you sure?',
+            type: 'warning'
+        }
+        if(typeof options_or_title == 'string'){
+            swal_options['title'] = options_or_title;
+        }
+        else{
+            for(key in options_or_title){
+                swal_options[key] = options_or_title[key];
+            }
+        }
+
+        if (confirm_cancel_callback){
+            confirm_callback(
+                    swal_options,
+                    confirm_cancel_callback
+            );
+        }
+        else{   // allow default behavior
+            current_target = window.event.currentTarget;
+            confirm_callback(
+                    swal_options,
+                    function(){
+                        if(current_target.href)
+                            window.location = current_target.href;
+                        else if(current_target.tagName == 'INPUT'){
+                            if(current_target.type == "checkbox"){
+                                if(current_target.checked == false)
+                                    current_target.checked = true;
+                                else
+                                    current_target.checked = false;
+                            }
+                            else{
+                                $(current_target).closest('form').submit();
+                            }
+                            // NOTICE! submit form not tested
+                        }
+                    }
+            );
+        }
+    }
+    
+</script>
+<script type="text/javascript">
+    function init_additional()
+    { 
+    }
+    </script>
+<link href="css/fonts.googleapis.com/css-family=Montserrat-400,600,700.css" tppabs="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="css/cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" tppabs="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<script src="css/maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" tppabs="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="sites/www.qiyuanglobal.com/js/smoothscroll.js" tppabs="http://www.qiyuanglobal.com/sites/www.qiyuanglobal.com/js/smoothscroll.js"></script>
+<link href="../www.your-website.com/-f.htm" tppabs="http://www.your-website.com/css/6_dark_orange/css/www_rate_calc_frame.css" rel="stylesheet" title="stylesheet" type="text/css" />
+<link href="sites/www.qiyuanglobal.com/css/main.css-v=1532798294.css" tppabs="http://www.qiyuanglobal.com/sites/www.qiyuanglobal.com/css/main.css?v=1532798294" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="js/www.googletagmanager.com/gtag/js-id=UA-117484570-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-117484570-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117484570-1');
+</script>
+</head>
+<body class="yui-skin-sam live-rate " itemscope itemtype="http://schema.org/Article">
+<header itemscope itemtype="http://schema.org/" id="header">
+  <nav class="navbar">
+    <div class="container relv">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.htm" tppabs="http://www.qiyuanglobal.com/"><img src="sites/www.qiyuanglobal.com/css/images/logo.png" tppabs="http://www.qiyuanglobal.com/sites/www.qiyuanglobal.com/css/images/logo.png" class="logo"></a> </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right" >
+          <li class="sub"> <a href="about-us.htm" tppabs="http://www.qiyuanglobal.com/about-us" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于我们</a>
+            <ul class="dropdown-menu dropdown-menu1 multi-level">
+              <li > <a href="about-us.htm" tppabs="http://www.qiyuanglobal.com/about-us" >关于我们</a> </li>
+              <li > <a href="our-team.htm" tppabs="http://www.qiyuanglobal.com/our-team" >大师云集</a> </li>
+            </ul>
+          </li>
+          <li class="sub"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">主营业务</a>
+            <ul class="dropdown-menu dropdown-menu1 multi-level">
+              <li > <a href="qi.htm" tppabs="http://www.qiyuanglobal.com/insurance" >起 命理</a> </li>
+              <li > <a href="yuan.htm" tppabs="http://www.qiyuanglobal.com/insurance" >源 珠宝</a> </li>
+              <li > <a href="xuan.htm" tppabs="http://www.qiyuanglobal.com/insurance" >玄 风水</a> </li>
+              <li > <a href="xue.htm" tppabs="http://www.qiyuanglobal.com/mortgage" >学 国学</a> </li>
+            </ul>
+          </li>
+          <li> <a href="blog.htm" tppabs="http://www.qiyuanglobal.com/blog">最新动态</a> </li>
+          <li> <a href="contact-us.htm" tppabs="http://www.qiyuanglobal.com/contact-us">联系我们</a> </li>
+          <li> <a href="cooperation.htm" tppabs="http://www.qiyuanglobal.com/blog">合作洽谈</a> </li>
+          
+          <!--                   	                <li class="sub">
+                    <a href="contact-us.htm" tppabs="http://www.qiyuanglobal.com/contact-us" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我们</a>
+                        <ul class="dropdown-menu dropdown-menu1 multi-level">
+                            	          
+                                <li >
+                                    <a href="our-team.htm" tppabs="http://www.qiyuanglobal.com/our-team" >团队中心</a>
+                                                                    </li>
+                            	          
+                                <li >
+                                    <a href="cooperation.htm" tppabs="http://www.qiyuanglobal.com/cooperation" >合作洽谈</a>
+                                                                    </li>
+                                                    </ul>	  
+                </li>    --> 
+          
+          <!--                  	                <li>
+                	<a href="javascript:if(confirm('http://en.qiyuanglobal.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://en.qiyuanglobal.com/'" tppabs="http://en.qiyuanglobal.com/">ENGLISH</a>
+                </li>	-->
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<section id="banner" class="inner-banner"> <img src="sites/www.qiyuanglobal.com/upload/modules/header_image/live rate.jpg" tppabs="http://www.qiyuanglobal.com/sites/www.qiyuanglobal.com/upload/modules/header_image/live rate.jpg" width="100%" height="auto" alt="">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="page-title">玄 风水</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 breadcrumb1">
+        <div class="mrgn40"></div>
+        <ul class="list-inline">
+          <li>
+            <ol id="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> <a itemprop="item" itemtype="http://schema.org/Thing" href="index.htm" tppabs="http://www.qiyuanglobal.com/"><span itemprop="name">首页</span></a>
+                <meta itemprop="position" content="1" />
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">&nbsp;&gt; <span itemprop="name">主营业务</span>
+                <meta itemprop="position" content="2" />
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">&nbsp;&gt; <a itemprop="item" itemtype="http://schema.org/Thing" href="xuan.htm" tppabs="http://www.qiyuanglobal.com/xuan"><span itemprop="name">玄 风水</span></a>
+                <meta itemprop="position" content="3" />
+              </li>
+            </ol>
+          </li>
+          <li class="pull-right"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="news">
+  <div class="container" class="container-main-1">
+  <div class="link-boxes">
+    <div class="row main-client-content">
+      <div class="col-sm-12">
+        <div class="mrgn20"></div>
+      </div>
+      <div class="col-sm-12 main-content" id="content">
+        <div class="row">
+          <p>
+            <link href="components/modules/LiveRates/css/live_rates.css" tppabs="http://www.qiyuanglobal.com/components/modules/LiveRates/css/live_rates.css" rel="stylesheet" type="text/css"/>
+            <!--box-1 s-->
+            
+          <div class="box-main data-main clearfix">
+            <div class="row">
+              <div class="col-md-4 control">
+                <div class="converter">
+                  <h2>起源玄学风水命理文化公司是首家覆盖全球华人的大型风水命理测算平台，旗下拥有众多知名大师，凭借着雄厚的实力迅速获得业界的认可，作为走出国门走向世界的风水命理测算公司的代表，我们致力于玄学文化的推广，让更多的人了解到我们作为我们民族瑰宝的玄学文化，也让更多人能享受到风水命理为我们带来的好处。</h2>
+                </div>
+              </div>
+              <div class="col-md-8 data">
+                <h2>风水</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="th1"> <p>风水是中华民族历史悠久的一门玄术，也称青乌术、青囊术，较为学术性的说法叫做堪舆。风水是自然界的力量，是宇宙的大磁场能量。它是一种研究环境与宇宙规律的哲学，人既然是自然的一部分，自然也是人的一部分，达到“天人合一”的境界。</p></th>
+                    </tr>
+                    <tr>
+                      <th class="th1"> <p>看风水的种类有很多，而起源玄学采用需要考量师傅技术与功力的玄空飞星风水的方式，这种方式以艰难复杂著称、却最为灵验。理论基础即是秦、汉以来流行的九宫八卦直说与九星术。用《易学》中的河洛、太极、八卦理论为根本，甚是灵验。</p></th>
+                    </tr>
+                    <tr>
+                      <th class="th1"> <p>室内风水学是中国传统风水学说的一种，包括客厅风水，餐厅风水，厨房风水和卧室风水。风水的核心思想是人与大自然的和谐，室内风水布局，在综合考虑天时地利人和之后对室内按照风水原理进行布置，能帮助改变运势，助运旺运。</p></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="container">
+            <div class="row side_box" id="ulcenter"> </div>
+          </div>
+        </div>
+        <div class="mrgn60"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<footer id="footer"> 
+  <!--Footer-->
+  <div class="footer-main">
+    <div class="container ">
+      <div class="row  " >
+        <div class="col-sm-4 col-md-4 ">
+          <div class="f-address"> <a href="#"><img src="sites/www.qiyuanglobal.com/css/images/logo.png" tppabs="http://www.qiyuanglobal.com/sites/www.qiyuanglobal.com/css/images/logo.png" class="flogo" alt=""></a>
+            <address>
+            <p>电话：<a href="tel:+61 449 170 430">+61 449 170 430</a><br>
+              邮箱：<a href="mailto:qiyuanxuanxue@qiyuanglobal.com">qiyuanxuanxue@qiyuanglobal.com</a><br>
+              地址：<a href="javascript:if(confirm('起源玄学 377-383+Sussex+St,+Sydney+NSW+2000'))window.location='https://www.google.com.au/maps/place/377-383+Sussex+St,+Sydney+NSW+2000'" tppabs="https://www.google.com.au/maps/place/377-383+Sussex+St,+Sydney+NSW+2000/" target="_blank">204/377-383 SUSSEX ST, SYDNEY, NSW, 2000, Australia</a></p>
+          </div>
+        </div>
+        <div class="col-sm-2 col-md-2 " align="center">
+          <h3 class="footer-title">微信公众号</h3>
+          <img src="sites/www.qiyuanglobal.com/css/images/we-chat.jpg" tppabs="http://www.qiyuanglobal.com/sites/www.qiyuanglobal.com/css/images/we-chat.jpg" class="wechat"> </div>
+		<div class="col-sm-2 col-md-2 " align="center">
+              <h3 class="footer-title">会晤合作</h3>
+              <img src="sites/www.qiyuanglobal.com/css/images/we-chat1.jpg" tppabs="http://www.qiyuanglobal.com/sites/www.qiyuanglobal.com/css/images/we-chat.jpg" class="wechat" /> </div>
+        <div class="col-sm-2 col-md-2 " align="center">
+              <h3 class="footer-title">客服</h3>
+              <img src="sites/www.qiyuanglobal.com/css/images/we-chat2.jpg" tppabs="http://www.qiyuanglobal.com/sites/www.qiyuanglobal.com/css/images/we-chat2.jpg" class="wechat" /> </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container ">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="col20">
+              <h4 class="fb-title"><a href="about-us.htm" tppabs="http://www.qiyuanglobal.com/about-us.html">关于我们</a></h4>
+              <ul class="list-unstyled">
+                <li><a href="our-team.htm" tppabs="http://www.qiyuanglobal.com/our-team.htm">大师云集</a></li>
+              </ul>
+            </div>
+            <div class="col20">
+              <h4 class="fb-title">主营业务</h4>
+              <ul class="list-unstyled">
+                <li><a href="qi.htm" tppabs="http://www.qiyuanglobal.com/qi.html">起 命理</a></li>
+                <li><a href="yuan.htm" tppabs="http://www.qiyuanglobal.com/yuan.html">源 珠宝</a></li>
+                <li><a href="xuan.htm" tppabs="http://www.qiyuanglobal.com/xuan.html">玄 风水</a></li>
+                <li><a href="xue.htm" tppabs="http://www.qiyuanglobal.com/xue.html">学 国学</a></li>
+              </ul>
+            </div>
+            <div class="col20">
+              <h4 class="fb-title"><a href="blog.htm" tppabs="http://www.qiyuanglobal.com/blog.html">最新动态</a></h4>
+            </div>
+            <div class="col20">
+              <h4 class="fb-title"><a href="contact-us.htm" tppabs="http://www.qiyuanglobal.com/contact-us.html">联系我们</a></h4>
+            </div>
+            <div class="col20">
+              <h4 class="fb-title"><a href="cooperation.htm" tppabs="http://www.qiyuanglobal.com/contact-us.html">合作洽谈</a></h4>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <hr class="line1">
+          </div>
+          <div class="col-sm-6">
+            <p class="copyright">Copyright © 2018 Global Trade Pty Ltd All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/jquery.easing.1.3.js" tppabs="http://www.qiyuanglobal.com/js/jquery.easing.1.3.js"></script> 
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                 document.getElementById("myBtn").style.display = "block";
+             } else {
+                 document.getElementById("myBtn").style.display = "none";
+             }
+         }
+$(document).ready(function() {
+    $('.smoothScroll').bind('click',function(event){
+        var $anchor = $(this);
+        
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 2000,'easeOutQuart');
+
+        event.preventDefault();
+    });
+    $('.navbar a.dropdown-toggle').on('click', function(e) {
+        var $el = $(this);
+        var $parent = $(this).offsetParent(".dropdown-menu");
+        if ($(this).parent("li").hasClass('open')) {
+            document.location.href = $(this).attr('href');
+        } else {
+            $(this).parent("li").addClass('open');
+        }
+
+        if(!$parent.parent().hasClass('nav')) {
+            $el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
+        }
+
+        $('http://www.qiyuanglobal.com/.nav li.open').not($(this).parents("li")).removeClass("open");
+
+        if ($(window).width() > 768) {
+            location.href = this.href;
+        }
+        return false;
+    });
+});
+</script> 
+
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<script type="text/javascript" src="js/s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a1f4aad71e384f1" tppabs="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a1f4aad71e384f1"></script> 
+
+<!--Start of Zendesk Chat Script--> 
+
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="../www.qiyuanglobal.com/js/widget_v2.257.js"/*tpa=https://v2.zopim.com/?5buXRqLCHxnIN20tmh1Hx7iNp9DRubL4*/;z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script> 
+
+<!--End of Zendesk Chat Script--> 
+
+<script type="text/javascript" src="js/validator-modern.js" tppabs="http://www.qiyuanglobal.com/js/validator-modern.js" ></script> 
+<script type="text/javascript" src="js/slimbox_module.js" tppabs="http://www.qiyuanglobal.com/js/slimbox_module.js" ></script> 
+<script type="text/javascript" src="js/body_blocker.js" tppabs="http://www.qiyuanglobal.com/js/body_blocker.js" ></script> 
+<script type="text/javascript" src="components/sidebox/js/sidebox_drop.js" tppabs="http://www.qiyuanglobal.com/components/sidebox/js/sidebox_drop.js" ></script> 
+<script type="text/javascript" src="components/sidebox/js/sidebox.js" tppabs="http://www.qiyuanglobal.com/components/sidebox/js/sidebox.js" ></script> 
+<script type="text/javascript" src="js/helper.js" tppabs="http://www.qiyuanglobal.com/js/helper.js"></script> 
+<script src="js/sweetAlert/sweetalert-dev.js" tppabs="http://www.qiyuanglobal.com/js/sweetAlert/sweetalert-dev.js"></script>
+<link rel="stylesheet" href="js/sweetAlert/sweetalert.css" tppabs="http://www.qiyuanglobal.com/js/sweetAlert/sweetalert.css">
+
+<!-- canvas-to-blob.min.js is only needed if you wish to resize images before upload.
+     This must be loaded before fileinput.min.js --> 
+
+<!-- sortable.min.js is only needed if you wish to sort / rearrange files in initial preview.
+     This must be loaded before fileinput.min.js --> 
+
+<!-- purify.min.js is only needed if you wish to purify HTML content in your preview for HTML files.
+     This must be loaded before fileinput.min.js --> 
+
+<!-- bootstrap.js below is needed if you wish to zoom and view file content
+     in a larger detailed modal dialog --> 
+
+<!-- optionally if you need a theme like font awesome theme you can include
+    it as mentioned below --> 
+
+<!-- optionally if you need translation for your language then include
+    locale file as mentioned below --> 
+
+<script type="text/javascript">
+    
+    YAHOO.util.Event.onDOMReady(function(){
+        init_additional();
+        
+    });
+    
+</script> 
+<a href="#header" id="myBtn" title="Go to top" class="smoothScroll"><i class="fa fa-chevron-up"></i></a> 
+<script type="text/javascript" src="sites/www.qiyuanglobal.com/js/bideo.js" tppabs="http://www.qiyuanglobal.com/sites/www.qiyuanglobal.com/js/bideo.js"></script> 
+<script type="text/javascript" src="sites/www.qiyuanglobal.com/js/main.js" tppabs="http://www.qiyuanglobal.com/sites/www.qiyuanglobal.com/js/main.js"></script>
+</body>
+</html>
