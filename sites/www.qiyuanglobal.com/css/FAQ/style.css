@@ -1,0 +1,138 @@
+
+/* ### Sidebars ### */
+.toggler {
+    color: #222;
+    padding: 2px 5px;
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #f5f5f5;
+    border-left: 1px solid #f5f5f5;
+    margin: 0;
+}
+#faq_accordion h3.atStart {font-weight: bold; font-size: 13px;}
+.element p {margin: 5px 10px;}
+.element a.ask {margin-left: 10px;}
+/*.element a {background:#fc4c82; border: 1px outset #CCCCCC; margin-left: 10px; color:#FFFFFF; padding: 2px 5px;}*/
+h3.toggler {font-weight: bold;font-size: 16px;}
+h3.toggler img {float:right;}
+h3.toggler:hover {cursor: n-resize;}
+
+#faqsContact {padding: 40px 30px 30px 30px;}
+#faqEdit {display:block; width:60px; height:25px; padding-left:0; margin-bottom:10px; color:#fff; line-height:25px; text-decoration:none; text-align:center;}
+#faqEdit:hover {color:#515f03;}
+
+.yui-skin-sam .yui-accordionview div.yui-accordion-content {
+    overflow: hidden;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.yui-skin-sam .hidden {
+    visibility: hidden;
+    position: absolute;
+	height:0;
+}
+
+.yui-skin-sam .almosthidden {
+    position: absolute;
+    left: -9999px;
+    z-index: -10;
+}
+
+.yui-skin-sam .yui-accordionview li.yui-accordion-panel {
+    display: inline;
+}
+.yui-skin-sam ul.yui-accordionview ul.yui-accordionview {
+    zoom: 1;
+}
+
+.yui-skin-sam .yui-accordionview li.yui-accordion-panel a.yui-accordion-toggle {
+    display: block;
+    color: #414042!important;
+    padding: 8px 60px 8px 20px;
+    background-image: url("../images/accordion-arrow-down.png"/*tpa=http://www.gtrading.com.au/sites/www.gtrading.com.au/css/images/accordion-arrow-down.png*/);
+    background-repeat:no-repeat;
+    background-color:#f4f4f4;
+    -ms-background-position-y:50%;
+    background-position-y:50%;
+    -ms-background-position-x:97%;
+    background-position-x:97%;
+    background-position:97% 50% ;
+    margin:0 0 15px 0;
+    position:relative;
+    font-weight:700;
+    font-size:12px;
+}
+.yui-skin-sam .yui-accordionview li.yui-accordion-panel a.yui-accordion-toggle:hover {
+    cursor:pointer;
+	background-color:#F5F5F5;
+}
+
+.yui-skin-sam .yui-accordionview li.yui-accordion-panel a.yui-accordion-toggle.active {
+    background-image: url("../images/accordion-arrow-up.png"/*tpa=http://www.gtrading.com.au/sites/www.gtrading.com.au/css/images/accordion-arrow-up.png*/);
+}
+
+.yui-skin-sam .yui-accordion-toggle .indicator {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url("sprite.png"/*tpa=http://www.gtrading.com.au/sites/www.gtrading.com.au/css/FAQ/sprite.png*/) 0 -350px;
+    position: absolute;
+    right: 0.5em;
+    top: 25%;
+}
+
+.yui-skin-sam .yui-accordion-toggle.active .indicator {
+    background: url("sprite.png"/*tpa=http://www.gtrading.com.au/sites/www.gtrading.com.au/css/FAQ/sprite.png*/) 0 -400px;
+}
+
+.yui-skin-sam .yui-accordion-content {
+    _zoom: 1;
+}
+
+.yui-skin-sam ul.submenu {
+    background: #fff;
+}
+
+.yui-skin-sam ul.submenu li a {
+    display: block;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding: 0.3em;
+    padding-left: 0.5em;
+    text-decoration: none;
+}
+
+.yui-skin-sam ul.submenu li a:hover {
+    background: #b3d4ff;
+}
+
+.yui-skin-sam ul.submenu li a:visited, .yui-skin-sam .yui-accordionview li.yui-accordion-panel a.link:visited {
+    color: #777;
+}
+
+.yui-accordionview {
+    padding-left:0;
+}
+a#faqEdit {
+    text-decoration:none;
+    color:#fff;
+    background-color:#ADBC5B;
+    padding:0 5px;
+    margin-top:10px;
+    font-family: 'Asap',sans-serif;
+}
+a#faqEdit:hover {
+    background-color:#8AA207;
+}
+a.Question {
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	padding:5px 10px;
+	width:85px;
+	background-color:#666;
+	margin-bottom:15px;
+}
+a.Question:hover {background-color:#333;}
